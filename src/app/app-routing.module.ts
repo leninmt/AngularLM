@@ -6,13 +6,14 @@ import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProductComponent } from './pages/product/product.component';
 import { CategoryComponent } from './pages/category/category.component';
+import { NotPageFoundComponent } from './shared/not-page-found/not-page-found.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'product', component: ProductComponent},
-  {path: 'category', component: CategoryComponent},
+
+  {path: '**', component: NotPageFoundComponent},
+
 
  ]
 
@@ -20,7 +21,9 @@ const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule
-  ]
+    RouterModule.forRoot(routes)
+  ],
+  exports: [RouterModule],
+  
 })
 export class AppRoutingModule { }
