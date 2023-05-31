@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
+
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProductComponent } from './pages/product/product.component';
 import { CategoryComponent } from './pages/category/category.component';
 import { NotPageFoundComponent } from './shared/not-page-found/not-page-found.component';
 
 const routes: Routes = [
-  {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent},
 
+
+  {path: '', redirecto: '/dashboard', pathMatch: 'full'},
   {path: '**', component: NotPageFoundComponent},
 
 
@@ -20,10 +19,19 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
+
+    RouterModule.forRoot(routes),
+    AuthRoutingModule,
+    PagesRoutingModule
+
   ],
-  exports: [RouterModule],
   
+  exports: [
+    RouterModule,
+    AuthRoutingModule,
+    PagesRoutingModule
+
+    ],
+
 })
 export class AppRoutingModule { }

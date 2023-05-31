@@ -10,10 +10,10 @@ import { AuthRoutingModule } from '../auth/auth-routing.module';
 
 const routes: Routes = [
   //rutas protegidas
-  {path: '',
+  {path: 'dashboard',
   component: PagesComponent,
   children: [
-    {path: 'dashboard', component: DashboardComponent},
+    {path: '', component: DashboardComponent},
     {path: 'product', component: ProductComponent},
     {path: 'category', component: CategoryComponent},
     {path: '', redirectTo:'/dashboard', pathMatch:'full'},
@@ -29,8 +29,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    RouterModule.forChild(routes)
-    AuthRoutingModule
+    RouterModule.forChild(routes),
+    
 
   ]
 })

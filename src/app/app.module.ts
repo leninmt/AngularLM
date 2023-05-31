@@ -21,6 +21,7 @@ import { AuthRoutingModule } from './auth/auth-routing.module';
         SharedModule,
         AppRoutingModule,
         AuthRoutingModule
-    ]
+    ],
+    e
 })
 export class AppModule { }
