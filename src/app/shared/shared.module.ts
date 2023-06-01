@@ -5,7 +5,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { SharedComponent } from './shared.component';
-import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
 
 @NgModule({
   declarations: [
@@ -13,8 +12,7 @@ import { NotPageFoundComponent } from './not-page-found/not-page-found.component
     SidebarComponent,
     FooterComponent,
     BreadcrumbsComponent,
-    SharedComponent,
-    NotPageFoundComponent
+    SharedComponent
   ],
   imports: [
     CommonModule

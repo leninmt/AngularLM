@@ -4,8 +4,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { PagesComponent } from './pages.component';
-import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,9 +23,7 @@ import { SharedModule } from '../shared/shared.module';
     DashboardComponent,
     CategoryComponent,
     ProductComponent,
-    PagesComponent,
-    SharedModule,
-    RouterModule
+    PagesComponent
   ],
 })
 export class PagesModule { }
