@@ -9,12 +9,12 @@ const routes:Routes = [
   //rutas protegidas
   {path:'dashboard',
    component:PagesComponent,
-   children:[  
-   {path:'', component:DashboardComponent},  
-   {path:'product', component:ProductComponent},  
+   children:[
+   {path:'', component:DashboardComponent},
+   {path:'product', component:ProductComponent},
    {path:'category', component:CategoryComponent},
-   {path:'', redirectTo:'/dashboard', pathMatch:'full'},  
-   //{path:'**', component:NoPagesFoundComponent},  
+   {path:'', redirectTo:'/dashboard', pathMatch:'full'},
+   //{path:'**', component:NoPagesFoundComponent},
   ]},
   ]
 @NgModule({
