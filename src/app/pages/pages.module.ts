@@ -6,18 +6,21 @@ import { ProductComponent } from './product/product.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     CategoryComponent,
     ProductComponent,
-    PagesComponent
+    PagesComponent,
+    
   ],
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   exports: [
     DashboardComponent,
