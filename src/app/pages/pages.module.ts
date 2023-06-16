@@ -6,6 +6,7 @@ import { ProductComponent } from './product/product.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
+
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -14,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
     CategoryComponent,
     ProductComponent,
     PagesComponent,
-    
+   
   ],
   imports: [
     CommonModule,

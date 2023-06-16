@@ -12,8 +12,8 @@ constructor (private httpClient:HttpClient){
 }
 
 ngOnInit(): void{
-  this.getProducts();
-  //this.getProduct();
+  //this.getProducts();
+  this.getProduct();
   //this.createProduct();
   //this.updateProduct();
   //this.deleteProduct();

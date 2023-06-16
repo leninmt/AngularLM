@@ -13,7 +13,7 @@ const routes:Routes = [
    {path:'', component:DashboardComponent},
    {path:'product', component:ProductComponent},
    {path:'category', component:CategoryComponent},
-   
+
 
    {path:'', redirectTo:'/dashboard', pathMatch:'full'},
    //{path:'**', component:NoPagesFoundComponent},
